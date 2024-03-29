@@ -15,7 +15,7 @@ const Hero = () => {
             className="hero__text"
           >
             <h1>LEONIA</h1>
-            <h2>Soluciones en inteligencia artificial</h2>
+            <h2>Soluciones estadísticas y de inteligencia artificial</h2>
             <p className="paragraph paragraph--big">
               Lógica, Estrategia y Optimización en Negocios con Inteligencia Artificial
             </p>
