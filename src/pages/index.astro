@@ -1,55 +1,12 @@
 ---
-import "../styles/global.css"
-
 // Components
-import { Header, Hero, Features, Products, Footer } from "../components";
+import {Hero, Features, Products} from "@/components";
+import Layout from "@/Layout.astro";
 ---
 
-<html lang="es">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<link rel="preconnect" href="https://fonts.googleapis.com"> 
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" as="image" href="images/LEONIA.png" />
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap"
-      as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap"></noscript>
-		<title>LEONIA | Soluciones estadísticas y de inteligencia artificial</title>
-    <link
-      rel="canonical"
-      href="https://leonia.com.co/"
-    />
-    <meta property="og:type" content="website" />
-    <meta name="apple-mobile-web-app-title" content="LEONIA" />
-    <meta property="og:site_name" content="Julian's Web Garden" />
-    <meta property="og:title" content="Soluciones estadísticas y de inteligencia artificial" />
-    <meta property="twitter:title" content="Soluciones estadísticas y de inteligencia artificial" />
-    <meta
-      name="description"
-      property="og:description"
-      content="Soluciones estadísticas y de inteligencia artificial para tu empresa"
-    />
-    <meta
-      name="twitter:description"
-      content="Soluciones estadísticas y de inteligencia artificial para tu empresa"
-    />
-    <meta property="og:image" content="https://leonia.com.co/images/LEONIA.png" />
-    <meta
-      name="twitter:image:src"
-      content="https://leonia.com.co/images/LEONIA.png"
-    />
-    <meta name="twitter:card" content="summary_large_image" />
-	</head>
-	<body>
-		<main>
-			<Header client:load />
-			<Hero client:load />
-			<Features client:load />
-      <Products client:load />
-			<Footer />
-		</main>
-	</body>
-</html>
+<Layout pageTitle="LEONIA | Soluciones estadísticas y de inteligencia artificial"
+  description="Soluciones estadísticas y de inteligencia artificial para tu empresa">
+  <Hero client:load />
+  <Features client:load />
+  <Products client:load />
+</Layout>
