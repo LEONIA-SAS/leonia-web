@@ -23,7 +23,7 @@ const Products = () => {
         </div>
         <ul className="products-list">
           <li className="product-list__item">
-            <h3><a href="http://zorro-app.vercel.app/" target="_blank" rel="noopener noreferrer">ZoRRO</a></h3>
+            <h3><a href="https://zorro.leonia.com.co/" target="_blank" rel="noopener noreferrer">ZoRRO</a></h3>
             <div className="product-list__item-description">
               <img src="/images/zorro-ss.webp" alt="Zorro" />
               <p className="paragraph paragraph--big">ZoRRO hace que la recolección de información de texto sea dinámica para los usuarios y útil para las empresas.</p>

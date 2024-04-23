@@ -2,13 +2,13 @@ const footerLinks = [
   {
     title: "Empresa",
     links: [
-      { name: "Blog", href: "/" },
+      { name: "Blog", href: "/blog" },
     ],
   },
   {
     title: "Productos",
     links: [
-      { name: "ZoRRO", href: "http://zorro-app.vercel.app/" }
+      { name: "ZoRRO", href: "https://zorro.leonia.com.co/" }
     ],
   }
 ];
