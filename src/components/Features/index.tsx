@@ -32,7 +32,7 @@ const features = [
 
 const Features = () => {
   return (
-    <section className="features">
+    <section className="features" id="servicios">
       <motion.div
         initial={{ opacity: 0, y: 72 }}
         whileInView={{

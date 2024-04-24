@@ -19,9 +19,10 @@ const Hero = () => {
             <p className="paragraph paragraph--big">
               Lógica, Estrategia y Optimización en Negocios con Inteligencia Artificial
             </p>
-            <button className="btn btn--primary btn--big" type="button">
+            <a className="btn btn--primary btn--big"
+              href="#servicios" type="button">
               Comencemos
-            </button>
+            </a>
           </motion.div>
           <motion.div
             initial={{ y: "100%" }}
