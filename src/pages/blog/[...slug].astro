@@ -1,0 +1,28 @@
+---
+import Layout from "@/Layout.astro";
+import { type CollectionEntry, getCollection } from 'astro:content';
+
+import './style.css';
+
+export async function getStaticPaths() {
+	const posts = await getCollection('blog');
+	return posts.map((post: { slug: any; }) => ({
+		params: { slug: post.slug },
+		props: post,
+	}));
+}
+type Props = CollectionEntry<'blog'>;
+
+const post = Astro.props;
+const { Content } = await post.render();
+---
+<Layout pageTitle={`${post.data.title} | Blog LEONIA`}
+    pageDescription={`${post.data.description}`}
+    pageType="blog post">
+  <h1>{post.data.title}</h1>
+  <p>{post.data.description}</p>
+  <hr>
+  <Content />
+  <hr>
+  <a href="/blog" class="btn btn--primary">← Regresar al blog</a>
+</Layout>

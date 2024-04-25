@@ -1,0 +1,30 @@
+---
+import Layout from "@/Layout.astro"
+import './style.css'
+
+import { getCollection } from 'astro:content';
+const posts = await getCollection('blog');
+type Post = {
+  data: {
+    title: string;
+    description: string;
+  };
+  slug: string;
+};
+---
+<Layout pageTitle="Blog | LEONIA"
+  pageDescription="Descubre las principales publicaciones y disfruta de los servicios de LEONIA"
+  pageType="blog">
+  <section class="posts">
+    {
+      posts.map((post: Post) => (
+        <article class="post">
+          {console.warn(post)}
+          <h2>{post.data.title}</h2>
+          <p>{post.data.description}</p>
+          <a href={`/blog/${post.slug}/`} class="btn btn--primary">Leer más</a>
+        </article>
+      ))
+    }
+  </section>
+</Layout>
