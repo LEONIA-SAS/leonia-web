@@ -3,7 +3,7 @@ import "@/styles/global.css"
 
 // Components
 import { Header, Footer } from "@/components";
-const { pageTitle, description } = Astro.props
+const { pageTitle, pageDescription, pageType } = Astro.props
 ---
 
 <html lang="es">
@@ -14,7 +14,9 @@ const { pageTitle, description } = Astro.props
 		<meta name="generator" content={Astro.generator} />
 		<link rel="preconnect" href="https://fonts.googleapis.com"> 
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" as="image" href="images/LEONIA.png" />
+    {pageType === 'main' && (
+      <link rel="preload" as="image" href="images/LEONIA.webp" />
+    )}
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap"
       as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap"></noscript>
@@ -31,11 +33,11 @@ const { pageTitle, description } = Astro.props
     <meta
       name="description"
       property="og:description"
-      content={description}
+      content={pageDescription}
     />
     <meta
       name="twitter:description"
-      content={description}
+      content={pageDescription}
     />
     <meta property="og:image" content="https://leonia.com.co/images/LEONIA.png" />
     <meta
@@ -46,7 +48,9 @@ const { pageTitle, description } = Astro.props
 	</head>
 	<body>
     <Header client:load />
-		<slot />
+		<main>
+      <slot />
+    </main>
     <Footer />
 	</body>
 </html>
