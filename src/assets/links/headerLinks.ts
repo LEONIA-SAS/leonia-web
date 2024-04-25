@@ -1,7 +1,7 @@
 const headerLinks = [
   { name: "Inicio", href: "/" },
   { name: "Productos", href: "/" },
-  { name: "Contacto", href: "/" },
+  { name: "Blog", href: "/blog" },
   ,
 ];
 

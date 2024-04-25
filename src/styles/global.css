@@ -167,7 +167,7 @@ h4 {
 .link--secondary,
 .link--secondary svg path {
   color: var(--lightyellow);
-  fill: var(--background);
+  fill: var(--lightyellow);
   font-weight: 500;
   white-space: nowrap;
 }
