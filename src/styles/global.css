@@ -182,7 +182,7 @@ h4 {
 
 .link--medium,
 .btn--medium {
-  color: var(--background);
+  color: var(--lightyellow);
   font-size: 1.8rem;
 }
 
