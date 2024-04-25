@@ -33,13 +33,14 @@ body {
   font-family: "Poppins", sans-serif;
   font-size: 1.8rem;
   font-weight: 400;
+  background: var(--lightBackground);
 }
 main {
   position: relative;
-  min-height: 100vh;
+  min-height: 50vh;
+  height: auto;
   color: var(--lightyellow);
-  background: var(--lightBackground);
-  overflow-x: hidden;
+  padding-inline: 2.4rem;
 }
 ul {
   text-decoration: none;
