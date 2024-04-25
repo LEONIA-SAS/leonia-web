@@ -19,7 +19,6 @@ type Post = {
     {
       posts.map((post: Post) => (
         <article class="post">
-          {console.warn(post)}
           <h2>{post.data.title}</h2>
           <p>{post.data.description}</p>
           <a href={`/blog/${post.slug}/`} class="btn btn--primary">Leer más</a>
