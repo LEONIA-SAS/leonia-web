@@ -8,10 +8,18 @@ section.posts{
   grid-gap: 1rem;
 }
 
-section.posts article{
+section.posts article {
   display: flex;
   flex-direction: column;
   gap: 1rem;
   align-items: center;
   padding: 1rem;
+}
+
+article.blog-post{
+  color: var(--white);
+}
+article.blog-post a{
+  color: var(--lightyellow);
+  font-weight: 700;
 }

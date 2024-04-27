@@ -22,7 +22,9 @@ const { Content } = await post.render();
   <h1>{post.data.title}</h1>
   <p>{post.data.description}</p>
   <hr>
-  <Content />
+  <article class="blog-post">
+    <Content />
+  </article>
   <hr>
   <a href="/blog" class="btn btn--primary">← Regresar al blog</a>
 </Layout>

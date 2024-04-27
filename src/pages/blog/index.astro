@@ -3,11 +3,14 @@ import Layout from "@/Layout.astro"
 import './style.css'
 
 import { getCollection } from 'astro:content';
-const posts = await getCollection('blog');
+const posts = (await getCollection('blog')).sort(
+	(a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf()
+);
 type Post = {
   data: {
     title: string;
     description: string;
+    pubDate: string;
   };
   slug: string;
 };

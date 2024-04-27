@@ -1,6 +1,6 @@
 ---
 title: "Inteligencia artificial y Estadística, una combinación ganadora"
-description: "Descubre cómo la inteligencia artificial y la estadística pueden hacer crecer tu negocio"
+description: "Descubre cómo la inteligencia artificial y la estadística pueden hacer crecer tu negocio."
 pubDate: 'Apr 25 2024'
 ---
 
