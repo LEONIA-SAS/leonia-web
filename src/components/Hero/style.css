@@ -10,14 +10,20 @@
   column-gap: 3.2rem;
   height: 45rem;
 }
+.hero__image{
+  display: flex;
+  justify-content: center;
+}
+
+.hero__text{
+  margin: auto;
+}
 
 .hero__image::after {
   content: "";
   position: absolute;
-  height: 40rem;
-  width: 70rem;
-  top: -10%;
-  left: 25%;
+  height: 400px;
+  aspect-ratio: 1/1;
   background-image: url("/images/LEONIA.webp");
   background-repeat: no-repeat;
   background-size: contain;
@@ -44,12 +50,8 @@
   .hero__image {
     order: 1;
   }
-
-  .hero__image::after {
-    top: -15%;
-    height: 40rem;
-    width: 60rem;
-    /* left: 15%; */
+  .hero__image::after{
+    height: 300px;
   }
 }
 
@@ -61,10 +63,7 @@
   .hero__inner {
     height: 70rem;
   }
-
-  .hero__image::after {
-    height: 40rem;
-    width: 60rem;
-    left: 10%;
+  .hero__image::after{
+    height: 250px;
   }
 }
