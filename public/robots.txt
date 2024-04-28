@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: http://leonia.com.co/sitemap-index.xml
