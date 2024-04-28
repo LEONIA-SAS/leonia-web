@@ -1,9 +1,14 @@
 interface NavLogoProps {
   fill: string;
 }
+
+import type { DetailedHTMLProps } from 'react';
+
 export const NavLogo: React.FC<NavLogoProps> = ({ fill }) => (
-  <a href="/">
-    <svg xmlns="http://www.w3.org/2000/svg" width="121" height="33" viewBox="0 0 791 154" fill={fill}>
+  <a href="/" title="Ir a la página principal">
+    <svg aria-label="LEONIA"
+      xmlns="http://www.w3.org/2000/svg" fill={fill}
+      width="121" height="33" viewBox="0 0 791 154">
       <defs xmlns="http://www.w3.org/2000/svg" id="defs1">
         <linearGradient id="linearGradient25" x1="-450.31522" y1="969.38214" x2="-452.35895" y2="812.84717" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0.94193596,0,0,0.93496039,738.65518,-770.88417)"/>
         <linearGradient id="linearGradient24" gradientTransform="rotate(90)">
