@@ -163,7 +163,6 @@ h4 {
 
 .link,
 .btn {
-  font-size: 1.5rem;
   font-weight: 700;
   transition: all 0.3s;
 }
@@ -182,6 +181,7 @@ h4 {
 .link--secondary svg path {
   color: var(--textColor);
   fill: var(--textColor);
+  font-size: 1.5rem;
   font-weight: 500;
   white-space: nowrap;
 }
