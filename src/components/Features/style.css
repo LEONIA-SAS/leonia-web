@@ -47,11 +47,12 @@
 .feature-list__item div {
   height: 80px;
   width: 80px;
+  border: 1px solid var(--lightyellow);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--darkViolet);
+  background: var(--lightBackground);
   transform: translateY(-50%);
 }
 

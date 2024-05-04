@@ -1,11 +1,19 @@
 :root {
-  --gold: hsl(50.22deg 98.54% 73.14%);
-  --darkViolet: hsl(257, 27%, 26%);
-  --lightyellow: #fbf3c4;
-  --veryDarkViolet: hsl(260, 8%, 14%);
-  --white: #ffffff;
+  --gold: hsl(50.22deg 98.72% 69.28%);
+  --lightyellow: #fbea8a;
+  --textColor: #ffffff;
   --background: hsl(240, 4%, 9%);
   --lightBackground: hsl(240, 4%, 20%);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --gold: #ffd840;
+    --lightyellow: hsl(50, 100%, 50%);
+    --textColor: #000000;
+    --background: hsl(240, 3%, 93%);
+    --lightBackground: hsl(0, 0%, 100%);
+  }
 }
 
 * {
@@ -40,7 +48,7 @@ main {
   position: relative;
   min-height: 50vh;
   height: auto;
-  color: var(--lightyellow);
+  color: var(--textColor);
   padding-inline: 2.4rem;
 }
 ul {
@@ -64,7 +72,7 @@ textarea {
 h1,
 h2,
 h3 {
-  color: var(--white);
+  color: var(--textColor);
   font-weight: 700;
   margin: 0;
 }
@@ -107,6 +115,10 @@ h4 {
   width: 95%;
 }
 
+.hero__text > .paragraph--big {
+  color: var(--lightyellow);
+}
+
 .paragraph--medium {
   font-size: 1.8rem;
   line-height: 3.2rem;
@@ -134,7 +146,7 @@ h4 {
 
 .btn--primary {
   background: var(--gold);
-  color: var(--background);
+  color: var(--lightBackground);
   text-transform: capitalize;
   border-radius: 2.8rem;
   box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.125);
@@ -168,8 +180,8 @@ h4 {
 
 .link--secondary,
 .link--secondary svg path {
-  color: var(--lightyellow);
-  fill: var(--lightyellow);
+  color: var(--textColor);
+  fill: var(--textColor);
   font-weight: 500;
   white-space: nowrap;
 }
@@ -189,13 +201,4 @@ h4 {
 .btn--big {
   font-size: 2rem;
   padding: 1.4rem 4rem;
-}
-
-.btn--form {
-  border-radius: 1rem;
-  white-space: nowrap;
-}
-
-.btn--copied {
-  background: var(--darkViolet);
 }

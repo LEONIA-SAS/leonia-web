@@ -17,7 +17,7 @@ section.posts article {
 }
 
 article.blog-post{
-  color: var(--white);
+  color: var(--textColor);
 }
 article.blog-post a{
   color: var(--lightyellow);
