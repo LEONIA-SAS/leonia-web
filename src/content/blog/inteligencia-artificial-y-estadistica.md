@@ -1,7 +1,7 @@
 ---
 title: "Inteligencia artificial y Estadística, una combinación ganadora"
 description: "Descubre cómo la inteligencia artificial y la estadística pueden hacer crecer tu negocio."
-pubDate: 'Apr 25 2024'
+pubDate: '04/25/2024'
 ---
 
 Una parte importante de cualquier empresa es el contacto con sus clientes. La inteligencia artificial (IA) y la estadística son dos herramientas poderosas que pueden optimizar este proceso y mejorar la toma de decisiones empresariales.
