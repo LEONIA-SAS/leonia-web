@@ -1,8 +1,5 @@
-import React from "react";
-import { motion } from "framer-motion";
-
-// Styles
-import "./style.css";
+import React, { Fragment } from "react";
+import InfoCards from "@/components/Componentes/InfoCards";
 
 // Icons
 import {
@@ -32,34 +29,18 @@ const features = [
 
 const Features = () => {
   return (
-    <section className="features" id="servicios">
-      <motion.div
-        initial={{ opacity: 0, y: 72 }}
-        whileInView={{
-          opacity: 1,
-          y: 0,
-          transition: {
-            delay: 0.5,
-            duration: 1,
-          },
-        }}
-        viewport={{ once: true }}
-        className="container"
-      >
-        <div className="title">
-          <h2>¿Qué ofrecemos?</h2>
-        </div>
-        <ul className="features-list">
+    <InfoCards title="Nuestros servicios">
+      <ul className="features-list">
           {features.map((feature, index) => (
-            <li key={index} className="feature-list__item">
+            <li key={index} className="feature-list__item"
+              style={{transform: `translateY(${index * 15}%)`}}>
               <div>{feature.icon}</div>
               <h3>{feature.title}</h3>
               <p className="paragraph paragraph--small">{feature.text}</p>
             </li>
           ))}
         </ul>
-      </motion.div>
-    </section>
+    </InfoCards>
   );
 };
 
