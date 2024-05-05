@@ -3,6 +3,7 @@ const footerLinks = [
     title: "Empresa",
     links: [
       { name: "Blog", href: "/blog" },
+      { name: "Nuestro equipo", href: "/equipo" },
     ],
   },
   {

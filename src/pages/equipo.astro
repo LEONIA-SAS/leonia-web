@@ -1,0 +1,46 @@
+---
+import Layout from "@/Layout.astro";
+import InfoCards from "@/components/Componentes/InfoCards";
+
+const team = [
+  {
+    name: 'Rosmer Vargas',
+    position: 'CEO',
+    description: 'Estadístico que actualmente está cursando una maestría en Ingeniería de Sistemas y Computación, con énfasis en machine learning/Data Science. Apasionado por la enseñanza de la Estadística, ha sido consultor y ha dictado diversos cursos de programación en R y Python sobre Estadística e Inteligencia Artificial, combinando el poder de la Estadística tradicional con el de la Inteligencia Artificial.',
+    image: 'https://media.licdn.com/dms/image/D4E03AQHOYV6CAj8pCw/profile-displayphoto-shrink_400_400/0/1712281095358?e=1720656000&v=beta&t=JySgf6ZVDpWjb8grHhYI47aoKtsNiyTGTn8dUo9V3E8'
+  },
+  {
+    name: 'Dairo Morales',
+    position: 'CTO',
+    description: 'Estadístico con especialización técnica en programación de software. Posee una gran capacidad para combinar la Estadística con la ingeniería de sistemas y desarrollar productos valiosos. Tiene conocimiento en R, Python y Javascript.',
+    image: 'https://media.licdn.com/dms/image/D4E03AQFgZRAkOqtHyg/profile-displayphoto-shrink_400_400/0/1714235732909?e=1720656000&v=beta&t=8Nd7HnFbSaw76Vf58AJK33NdLv6-ouhTcwsUf19dMpA'
+  },
+  {
+    name: 'Nicolás Castro',
+    position: 'CAIO',
+    description: 'Estudiante de Estadística en su último semestre. Cuenta con amplia experiencia en el entendimiento, construcción e implementación de modelos de Inteligencia Artificial para distintos casos de uso, como voz, texto, audio e imagen.',
+    image: 'https://media.licdn.com/dms/image/D5603AQHta0VrOYYu-w/profile-displayphoto-shrink_400_400/0/1712184860700?e=1720656000&v=beta&t=Xy2pkhGcKjQeZC4yKESKAQP4QgDvg0tvo2T95qz_ggc'
+  },
+]
+---
+
+<Layout pageTitle="Nuestro equipo | LEONIA"
+  pageDescription="Descubre el equipo detrás de nuestra empresa"
+  pageType="contentPage"
+  >
+  <InfoCards title={'Nuestro equipo'}>
+    <div class="container">
+      <p>Conoce a las personas que hacen posible que LEONIA sea una realidad.</p>
+      <ul class="features-list">
+        {team.map((member, index) => (
+          <li class="feature-list__item"
+            style={{transform: `translateY(${index * 15}%)`}}>
+            <img class="feature-icon" src={member.image} width="80" height="80"/>
+            <h3>{member.name} | {member.position}</h3>
+            <p class="paragraph paragraph--small">{member.description}</p>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </InfoCards>
+</Layout>
