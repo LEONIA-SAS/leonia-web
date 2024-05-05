@@ -17,15 +17,15 @@ const { pageTitle, pageDescription, pageType } = Astro.props
     <link rel="sitemap" href="/sitemap-index.xml" />
     {pageType === 'main' && (
       <link rel="preload" as="image" href="images/LEONIA.webp" />
+      <link
+        rel="canonical"
+        href="https://leonia.com.co/"
+      />
     )}
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap"
       as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap"></noscript>
 		<title>{pageTitle}</title>
-    <link
-      rel="canonical"
-      href="https://leonia.com.co/"
-    />
     <meta property="og:type" content="website" />
     <meta name="apple-mobile-web-app-title" content="LEONIA" />
     <meta property="og:site_name" content="LEONIA" />
@@ -46,6 +46,9 @@ const { pageTitle, pageDescription, pageType } = Astro.props
       content="https://leonia.com.co/images/LEONIA.png"
     />
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="keywords" content="leonia, ia, estadistica, dairo, rosmer, nicolas, empresas" />
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow" />
 	</head>
 	<body>
     <Header client:load />
