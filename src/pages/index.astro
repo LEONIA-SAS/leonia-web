@@ -11,4 +11,9 @@ import Layout from "@/Layout.astro";
   <Hero client:load />
   <Features client:load />
   <Products client:load />
+  <div class="ZoRROWrapper">
+    <chat-zorro></chat-zorro>
+    <button id="chatZoRROButton">Habla con nosotros</button>
+  </div>
+  <script is:inline src="src/assets/scripts/CargarWebComponent.ts"></script>
 </Layout>
