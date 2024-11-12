@@ -4,11 +4,11 @@ import React from "react";
 import "./style.css";
 
 // Links
-import footerLinks from "../../assets/links/footerLinks";
-import socialLinks from "../../assets/links/socialLinks";
+import footerLinks from "@/assets/links/footerLinks";
+import socialLinks from "@/assets/links/socialLinks";
 
 // Logo
-import { NavLogo } from "../../assets/logo";
+import { NavLogo } from "@/assets/icons/logo";
 
 const Footer = () => {
   return (

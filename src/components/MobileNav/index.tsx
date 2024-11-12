@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import "./style.css";
 
 // Header links
-import headerLinks from "../../assets/links/headerLinks";
+import headerLinks from "@/assets/links/headerLinks";
 
 const MobileNav = () => {
   return (
