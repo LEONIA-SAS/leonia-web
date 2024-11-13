@@ -1,10 +1,5 @@
 // Requiere ejecutarse en el contexto de la página
-const linkStyles = document.createElement('link');
-linkStyles.rel = 'stylesheet';
-linkStyles.id = 'webComponentStyles';
-linkStyles.href = '/src/styles/WebComponent.css';
-document.head.appendChild(linkStyles);
-
+import '/src/styles/WebComponent.css';
 
 var chatVisible = false;
 document.getElementById('chatZoRROButton')?.addEventListener('click', () => {
